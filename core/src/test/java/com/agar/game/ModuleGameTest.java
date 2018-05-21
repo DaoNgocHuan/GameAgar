@@ -67,7 +67,7 @@ public class ModuleGameTest {
         bot.run();
 
         Assert.assertEquals(GameWorld.playerBacteria.getX(), 30, 0.0);
-        Assert.assertEquals(GameWorld.playerBacteria.getY(), 31, 0.0);
+        Assert.assertEquals(GameWorld.playerBacteria.getY(), 51, 0.0);
     }
 
     @Test
@@ -86,7 +86,7 @@ public class ModuleGameTest {
         bot.run();
 
         Assert.assertEquals(GameWorld.playerBacteria.getX(), 60, 0.0);
-        Assert.assertEquals(GameWorld.playerBacteria.getY(), 59, 0.0);
+        Assert.assertEquals(GameWorld.playerBacteria.getY(), 49, 0.0);
     }
 
     @Test
@@ -124,6 +124,6 @@ public class ModuleGameTest {
         bot.run();
 
         Assert.assertEquals(GameWorld.playerBacteria.getX(), 11, 0.0);
-        Assert.assertEquals(GameWorld.playerBacteria.getY(), 10, 0.0);
+        Assert.assertEquals(GameWorld.playerBacteria.getY(), 50, 0.0);
     }
 }
