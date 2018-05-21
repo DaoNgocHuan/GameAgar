@@ -52,9 +52,9 @@ public class ModuleGameTest {
     }
 
     @Test
-    public void victimUp(){
+    public void goUp(){
 
-        GameWorld.playerBacteria.setPos(50, 50);
+        GameWorld.playerBacteria.setPos(30, 50);
 
         Agar agarUp = new Agar(null, null);
         agarUp.setPos(50, 100);
@@ -66,14 +66,14 @@ public class ModuleGameTest {
         bot.load(null);
         bot.run();
 
-        Assert.assertEquals(GameWorld.playerBacteria.getX(), 50, 0.0);
-        Assert.assertEquals(GameWorld.playerBacteria.getY(), 51, 0.0);
+        Assert.assertEquals(GameWorld.playerBacteria.getX(), 30, 0.0);
+        Assert.assertEquals(GameWorld.playerBacteria.getY(), 31, 0.0);
     }
 
     @Test
-    public void victimDown(){
+    public void goDown(){
 
-        GameWorld.playerBacteria.setPos(50, 50);
+        GameWorld.playerBacteria.setPos(60, 50);
 
         Agar agarDown = new Agar(null, null);
         agarDown.setPos(50, 0);
@@ -85,12 +85,12 @@ public class ModuleGameTest {
         bot.load(null);
         bot.run();
 
-        Assert.assertEquals(GameWorld.playerBacteria.getX(), 50, 0.0);
-        Assert.assertEquals(GameWorld.playerBacteria.getY(), 49, 0.0);
+        Assert.assertEquals(GameWorld.playerBacteria.getX(), 60, 0.0);
+        Assert.assertEquals(GameWorld.playerBacteria.getY(), 59, 0.0);
     }
 
     @Test
-    public void victimLeft(){
+    public void goLeft(){
 
         GameWorld.playerBacteria.setPos(50, 50);
 
@@ -109,9 +109,9 @@ public class ModuleGameTest {
     }
 
     @Test
-    public void victimRight(){
+    public void goRight(){
 
-        GameWorld.playerBacteria.setPos(50, 50);
+        GameWorld.playerBacteria.setPos(10, 50);
 
         Agar agarUp = new Agar(null, null);
         agarUp.setPos(100, 50);
@@ -123,7 +123,7 @@ public class ModuleGameTest {
         bot.load(null);
         bot.run();
 
-        Assert.assertEquals(GameWorld.playerBacteria.getX(), 51, 0.0);
-        Assert.assertEquals(GameWorld.playerBacteria.getY(), 50, 0.0);
+        Assert.assertEquals(GameWorld.playerBacteria.getX(), 11, 0.0);
+        Assert.assertEquals(GameWorld.playerBacteria.getY(), 10, 0.0);
     }
 }
